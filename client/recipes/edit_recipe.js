@@ -1,0 +1,3 @@
+Template.EditRecipe.helpers({
+  
+})

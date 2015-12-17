@@ -1,0 +1,32 @@
+<head>
+	<meta name="viewport" content="width=device-width" initial-scale="1">
+	<link rel="apple-touch-icon-precomposed" href="/images/apple-touch-icon-152x152-precomposed.png">
+	<link rel="icon" href="/images/favicon.png">
+	<!--[if IE]><link rel="shortcut icon" href="/images/favicon.ico"><![endif]-->
+	<meta name="msapplication-TileColor" content="#AED8E6">
+	<meta name="msapplication-TileImage" content="/images/tileicon.png">
+	<link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="//fonts.googleapis.com/css?family=Open+Sans:400,600,300,700,800" rel="stylesheet">
+</head>
+
+<body>
+	{{> sAlert}}
+</body>
+
+<template name="MasterLayout">
+	<div class="row">
+    <div class="col s3">
+      <ul id="slide-out" class="side-nav fixed">
+        <li><a href="{{pathFor 'Recipes'}}">Recipes List</a></li>
+        <li><a href="{{pathFor 'Add Recipe'}}">Add a recipe</a></li>
+        <li><a href="/logout">Logout</a></li>
+      </ul>
+    </div>
+    <div class="col s12">
+      <main>
+        {{> yield}}
+      </main>
+
+    </div>
+	</div>
+</template>

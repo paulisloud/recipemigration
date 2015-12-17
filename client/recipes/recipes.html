@@ -1,0 +1,9 @@
+<template name="Recipes">
+  <div class="col s12">
+    <ul class="collection">
+      {{#each listRecipes}}
+        <li class="collection-item">{{title}} <a href="{{pathFor 'Edit Recipe'}}">Edit</a> – <a href="{{pathFor 'Recipe HTML'}}">Get Code</a></li>
+      {{/each}}
+    </ul>
+  </div>
+</template>

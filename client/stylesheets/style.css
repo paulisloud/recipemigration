@@ -1,0 +1,14 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #FAFAFA;
+}
+
+.clearfix:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+.clearfix { display: inline-block; }
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+
+
+header, main, footer {
+  padding-left: 240px;
+}
