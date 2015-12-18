@@ -32,9 +32,12 @@ alanning:roles
 
 ########## Routing ##########
 iron:router
+#kadira:flow-router
+#arillo:flow-router-helpers
 
 ########## Layout ##########
 reactive-var
+kadira:blaze-layout
 
 ########## Schema ##########
 dburles:collection-helpers

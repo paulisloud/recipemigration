@@ -3,3 +3,9 @@ Template.Recipes.helpers({
     return Recipes.find()
   }
 })
+
+Template.RecipeHTML.helpers({
+  log: function () {
+    console.log(this)
+  }
+})
