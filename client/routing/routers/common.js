@@ -7,6 +7,10 @@ AccountsTemplates.configureRoute('signIn', {
 	redirect: "/recipes"
 });
 
+Accounts.validateNewUser(function() {
+    return false;
+});
+
 Router.route("/", function(){
 	this.redirect("/recipes")
 })
