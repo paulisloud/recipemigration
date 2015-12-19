@@ -11,9 +11,11 @@ AccountsTemplates.configureRoute('signIn', {
 //     return false;
 // });
 
-// Router.route("/", function(){
-// 	this.redirect("/recipes")
-// })
+FlowRouter.route("/", {
+	action: function () {
+		FlowRouter.go("Recipes")
+	}
+})
 //
 // Router.route("/logout", function(){
 // 	AccountsTemplates.logout();
