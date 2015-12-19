@@ -54,6 +54,7 @@ materialize:materialize@0.97.3
 mdg:validation-error@0.1.0
 meteor@1.1.10
 meteor-base@1.0.1
+meteorhacks:subs-manager@1.6.3
 minifiers@1.1.7
 minimongo@1.0.10
 mobile-experience@1.0.1

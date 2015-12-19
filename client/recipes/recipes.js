@@ -1,8 +1,11 @@
+RecipesSub = new SubsManager()
+
 Template.Recipes.onCreated(function () {
-  var self = this;
+  var self = this
+  self.ready = new ReactiveVar()
   self.autorun(function () {
-    // var recipeId = FlowRouter.getParam('_id');
-    self.subscribe("recipes")
+    var handle = RecipesSub.subscribe("recipes")
+    self.ready.set(handle.ready())
   })
 })
 
@@ -11,7 +14,7 @@ Template.Recipes.helpers({
     return Recipes.find()
   },
   pathForEdit: function () {
-    var recipe = this;
+    var recipe = this
     var params = {
       _id: recipe._id
     }
@@ -20,7 +23,7 @@ Template.Recipes.helpers({
     return path
   },
   pathForCode: function () {
-    var recipe = this;
+    var recipe = this
     var params = {
       _id: recipe._id
     }

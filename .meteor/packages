@@ -42,6 +42,9 @@ kadira:blaze-layout
 dburles:collection-helpers
 matb33:collection-hooks
 
+########## Subscriptions ##########
+meteorhacks:subs-manager
+
 ########## Misc ##########
 mrt:moment
 materialize:materialize

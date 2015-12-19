@@ -1,8 +1,12 @@
+SingleRecipeSub = new SubsManager()
+
 Template.EditRecipe.onCreated(function () {
-  var self = this;
+  var self = this
+  self.ready = new ReactiveVar()
   self.autorun(function () {
     var recipeId = FlowRouter.getParam('_id')
-    self.subscribe('singleRecipe', recipeId)
+    var handle = SingleRecipeSub.subscribe("singleRecipe", recipeId)
+    self.ready.set(handle.ready())
   })
 })
 
