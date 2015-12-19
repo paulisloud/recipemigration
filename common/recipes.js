@@ -100,7 +100,7 @@ Schemas.Recipe = new SimpleSchema({
 Recipes.after.insert(function(userId, doc) {
 	if(Meteor.isClient) {
 		sAlert.success( "Recipe created.", { onRouteClose: false } );
-		Router.go('Recipes');
+		FlowRouter.go('Recipes');
 	}
 });
 

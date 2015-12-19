@@ -17,15 +17,14 @@
 	<div class="row">
     <div class="col s3">
       <ul id="slide-out" class="side-nav fixed">
-        <li><a href="{{pathFor 'Recipes'}}">Recipes List</a></li>
-        <li><a href="{{pathFor 'Add Recipe'}}">Add a recipe</a></li>
+        <li><a href="/recipes">Recipes List</a></li>
+        <li><a href="/add-recipe">Add a recipe</a></li>
         <li><a href="/logout">Logout</a></li>
       </ul>
     </div>
     <div class="col s12">
       <main>
-				{{> yield}}
-				<!-- {{> Template.dynamic template=area}} -->
+				{{>Template.dynamic template=content}}
       </main>
     </div>
 	</div>

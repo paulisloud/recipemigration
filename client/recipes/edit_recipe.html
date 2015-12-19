@@ -1,43 +1,45 @@
 <template name="EditRecipe">
-  {{#autoForm collection="Recipes" doc=this id="updateRecipeForm" type="update"}}
-  <div class="col s10 push-s1">
-    <h2>Editing: {{title}}</h2>
-  </div>
-  <div class="col s10 push-s1">
-    {{> afQuickField name='title'}}
-    {{> afQuickField name='summary'}}
-  </div>
-  <div class="col s5 push-s1">
-    {{> afQuickField name='cuisine'}}
-    {{> afQuickField name='course'}}
-    {{> afQuickField name='skillLevel'}}
-    {{> afQuickField name='yields'}}
-    {{> afQuickField name='servings'}}
-    {{> afQuickField name='prepTime'}}
-    {{> afQuickField name='cookTime'}}
-    {{> afQuickField name='calories'}}
-  </div>
-  <div class="col s5 push-s1">
-    {{> afQuickField name='protein'}}
-    {{> afQuickField name='fat'}}
-    {{> afQuickField name='sodium'}}
-    {{> afQuickField name='carbohydrates'}}
-    {{> afQuickField name='fiber'}}
-    {{> afQuickField name='sugar'}}
-    {{> afQuickField name='cholesterol'}}
-  </div>
-  <div class="clearfix"></div>
-  <div class="col s5 push-s1">
-    {{> afArrayField name='ingredients' template="customAF"}}
-  </div>
-  <div class="col s5 push-s1">
-    {{> afArrayField name='instructions' template="customAF"}}
-  </div>
-  <div class="clearfix"></div>
-  <div class="col s10 push-s1">
-    <button type="submit" class="btn btn-update right teal lighten-1">Save Recipe</button>
-  </div>
-
-
-  {{/autoForm}}
+  {{#if Template.subscriptionsReady}}
+    {{#with post}}
+      {{#autoForm collection="Recipes" doc=this id="updateRecipeForm" type="update"}}
+      <div class="col s10 push-s1">
+        <h2>Editing: {{title}}</h2>
+      </div>
+      <div class="col s10 push-s1">
+        {{> afQuickField name='title'}}
+        {{> afQuickField name='summary'}}
+      </div>
+      <div class="col s5 push-s1">
+        {{> afQuickField name='cuisine'}}
+        {{> afQuickField name='course'}}
+        {{> afQuickField name='skillLevel'}}
+        {{> afQuickField name='yields'}}
+        {{> afQuickField name='servings'}}
+        {{> afQuickField name='prepTime'}}
+        {{> afQuickField name='cookTime'}}
+        {{> afQuickField name='calories'}}
+      </div>
+      <div class="col s5 push-s1">
+        {{> afQuickField name='protein'}}
+        {{> afQuickField name='fat'}}
+        {{> afQuickField name='sodium'}}
+        {{> afQuickField name='carbohydrates'}}
+        {{> afQuickField name='fiber'}}
+        {{> afQuickField name='sugar'}}
+        {{> afQuickField name='cholesterol'}}
+      </div>
+      <div class="clearfix"></div>
+      <div class="col s5 push-s1">
+        {{> afArrayField name='ingredients' template="customAF"}}
+      </div>
+      <div class="col s5 push-s1">
+        {{> afArrayField name='instructions' template="customAF"}}
+      </div>
+      <div class="clearfix"></div>
+      <div class="col s10 push-s1">
+        <button type="submit" class="btn btn-update right teal lighten-1">Save Recipe</button>
+      </div>
+      {{/autoForm}}
+    {{/with}}
+  {{/if}}
 </template>

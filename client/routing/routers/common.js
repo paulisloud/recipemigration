@@ -1,6 +1,6 @@
-Router.configure({
-	loadingTemplate: 'Loading',
-});
+// Router.configure({
+// 	loadingTemplate: 'Loading',
+// });
 
 AccountsTemplates.configureRoute('signIn', {
 	layoutTemplate: "LoginLayout",
@@ -11,10 +11,10 @@ AccountsTemplates.configureRoute('signIn', {
 //     return false;
 // });
 
-Router.route("/", function(){
-	this.redirect("/recipes")
-})
-
-Router.route("/logout", function(){
-	AccountsTemplates.logout();
-});
+// Router.route("/", function(){
+// 	this.redirect("/recipes")
+// })
+//
+// Router.route("/logout", function(){
+// 	AccountsTemplates.logout();
+// });

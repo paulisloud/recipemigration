@@ -19,7 +19,8 @@ ecmascript              # Enable ECMAScript2015+ syntax in app code
 ########## Accounts ##########
 accounts-base
 useraccounts:core
-useraccounts:iron-routing
+#useraccounts:iron-routing
+useraccounts:flow-routing
 useraccounts:materialize
 accounts-password
 
@@ -31,12 +32,10 @@ aldeed:delete-button
 alanning:roles
 
 ########## Routing ##########
-iron:router
-#kadira:flow-router
+kadira:flow-router
 #arillo:flow-router-helpers
 
 ########## Layout ##########
-reactive-var
 kadira:blaze-layout
 
 ########## Schema ##########
@@ -45,8 +44,9 @@ matb33:collection-hooks
 
 ########## Misc ##########
 mrt:moment
-reactive-dict
 materialize:materialize
+reactive-var
+reactive-dict
 
 ########## Alerts ##########
 juliancwirko:s-alert
