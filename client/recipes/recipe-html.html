@@ -1,7 +1,8 @@
 <template name="RecipeHTML">
 <code>
 <pre>
-
+{{#with post}}
+{{log}}
 &lt;h1&gt;{{title}}&lt;/h1&gt;
 &lt;ul class="taxonomy"&gt;
   &lt;li&gt;Cuisine: {{cuisine}}&lt;/li&gt;
@@ -37,6 +38,7 @@
 &lt;ul class="instructions"&gt;{{#each instructions}}
   &lt;li&gt;{{this}}&lt;/li&gt;{{/each}}
 &lt;/ul&gt;
+{{/with}}
 
 </pre>
 </code>

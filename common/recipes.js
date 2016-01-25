@@ -99,8 +99,7 @@ Schemas.Recipe = new SimpleSchema({
 
 Recipes.after.insert(function(userId, doc) {
 	if(Meteor.isClient) {
-		sAlert.success( "Recipe created.", { onRouteClose: false } );
-		FlowRouter.go('Recipes');
+		sAlert.success( "Recipe created.", { timeout: 1500 } );
 	}
 });
 
