@@ -19,7 +19,6 @@ ecmascript              # Enable ECMAScript2015+ syntax in app code
 ########## Accounts ##########
 accounts-base
 useraccounts:core
-#useraccounts:iron-routing
 useraccounts:flow-routing
 useraccounts:materialize
 accounts-password
@@ -33,7 +32,6 @@ alanning:roles
 
 ########## Routing ##########
 kadira:flow-router
-#arillo:flow-router-helpers
 
 ########## Layout ##########
 kadira:blaze-layout
