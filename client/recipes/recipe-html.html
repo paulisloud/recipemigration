@@ -3,7 +3,7 @@
 <pre>
 {{#with post}}
 {{log}}
-&lt;h3&gt;Recipe Summary&lt;/h3&gt;
+&lt;h3&gt;Summary&lt;/h3&gt;
 &lt;ul class="taxonomy"&gt;
   &lt;li&gt;Cuisine: {{cuisine}}&lt;/li&gt;
   &lt;li&gt;Course: {{course}}&lt;/li&gt;
@@ -35,9 +35,9 @@
 &lt;/ul&gt;
 
 &lt;h3&gt;Direcitons&lt;/h3&gt;
-&lt;ul class="instructions"&gt;{{#each instructions}}
+&lt;ol class="instructions"&gt;{{#each instructions}}
   &lt;li&gt;{{this}}&lt;/li&gt;{{/each}}
-&lt;/ul&gt;
+&lt;/ol&gt;
 {{/with}}
 
 </pre>
