@@ -3,19 +3,23 @@
 <pre>
 {{#with post}}
 {{log}}
-&lt;h3&gt;Summary&lt;/h3&gt;
+&lt;h3 class="clear"&gt;Summary&lt;/h3&gt;
+&lt;div class="col-sm-12 col-xs-6 col-md-6 col-lg-6"&gt;
 &lt;ul class="taxonomy"&gt;
   &lt;li&gt;Cuisine: {{cuisine}}&lt;/li&gt;
   &lt;li&gt;Course: {{course}}&lt;/li&gt;
   &lt;li&gt;Skill Level: {{skillLevel}}&lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
 
+&lt;div class="col-sm-12 col-xs-6 col-md-6 col-lg-6"&gt;
 &lt;ul class="recipe-meta"&gt;
   &lt;li&gt;Makes: {{yields}}&lt;/li&gt;
   &lt;li&gt;Servings: {{servings}}&lt;/li&gt;
   &lt;li&gt;Prep Time: {{prepTime}}&lt;/li&gt;
   &lt;li&gt;Cook Time: {{cookTime}}&lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
 
 &lt;div class="col-sm-12 col-xs-6 col-md-6 col-lg-6"&gt;
   &lt;ul class="nutritional-info"&gt;
@@ -38,7 +42,7 @@
   &lt;/ul&gt;
 &lt;/div&gt;
 
-&lt;h3&gt;Direcitons&lt;/h3&gt;
+&lt;h3 class="clear"&gt;Direcitons&lt;/h3&gt;
 &lt;ol class="instructions"&gt;{{#each instructions}}
   &lt;li&gt;{{this}}&lt;/li&gt;{{/each}}
 &lt;/ol&gt;
