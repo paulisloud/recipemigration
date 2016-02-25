@@ -24,6 +24,13 @@
 &lt;/div&gt;
 
 &lt;div class="col-xs-12 col-sm-6 no-left-pad"&gt;
+  &lt;h3&gt;Ingredients&lt;/h3&gt;
+  &lt;ul class="ingredients"&gt;{{#each ingredients}}
+    &lt;li&gt;{{this}}&lt;/li&gt;{{/each}}
+  &lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div class="col-xs-12 col-sm-6"&gt;
   &lt;ul class="nutritional-info"&gt;
     &lt;h3&gt;Nutritional Information&lt;/h3&gt;
     &lt;li&gt;Calories: {{calories}}&lt;/li&gt;
@@ -34,13 +41,6 @@
     &lt;li&gt;Fiber: {{fiber}}&lt;/li&gt;
     &lt;li&gt;Sugar: {{sugar}}&lt;/li&gt;
     &lt;li&gt;Cholesterol: {{Cholesterol}}&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/div&gt;
-
-&lt;div class="col-xs-12 col-sm-6"&gt;
-  &lt;h3&gt;Ingredients&lt;/h3&gt;
-  &lt;ul class="ingredients"&gt;{{#each ingredients}}
-    &lt;li&gt;{{this}}&lt;/li&gt;{{/each}}
   &lt;/ul&gt;
 &lt;/div&gt;
 
